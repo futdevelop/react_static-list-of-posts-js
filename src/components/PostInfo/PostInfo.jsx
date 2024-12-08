@@ -5,7 +5,7 @@ import { UserInfo } from '../UserInfo';
 export const PostInfo = ({ post }) => {
   let isNoComments = false;
 
-  if (post.comments.length == 0) {
+  if (post.comments.length === 0) {
     isNoComments = true;
   }
 
