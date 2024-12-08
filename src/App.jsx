@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import './App.scss';
-import commetsFromServer from './api/comments.json'
+import commentsFromServer from './api/comments.json'
 import postsFromServer from './api/posts.json';
 import usersFromServer from './api/users.json';
 import { PostList } from './components/PostList';
@@ -11,7 +11,7 @@ function getUserById(userId) {
 }
 
 function getCommentsById(postId) {
-  return commetsFromServer.filter(comment => comment.postId === postId);
+  return commentsFromServer.filter(comment => comment.postId === postId);
 }
 
 export const posts = postsFromServer.map(post => ({
